@@ -1,0 +1,410 @@
+# UC COLLEGE TRACKER — STARTER KNOWLEDGE BASE
+# Purpose:
+# Seed knowledge base for a college-tracking chatbot using RAG.
+# Each college is represented by source pages grouped by topic.
+# URLs are official university sources supplied for the initial dataset.
+# The chatbot should treat these URLs as source references and retrieve
+# current information from the web when answering time-sensitive questions.
+
+============================================================
+UCLA — University of California, Los Angeles
+============================================================
+
+COLLEGE: UCLA
+SYSTEM: University of California
+LOCATION: Los Angeles, California
+WEBSITE: https://admission.ucla.edu/
+
+[UCLA | ADMISSIONS | FIRST-YEAR]
+SOURCE: https://admission.ucla.edu/apply/first-year
+USE FOR: First-year admission information, application process, applicant requirements, and admissions guidance.
+
+[UCLA | ACADEMICS | MAJORS]
+SOURCE: https://admission.ucla.edu/apply/majors
+USE FOR: Undergraduate majors and academic program information.
+
+[UCLA | COST | TUITION AND FEES]
+SOURCE: https://admission.ucla.edu/tuition-aid/tuition-fees
+USE FOR: Tuition, fees, and cost-of-attendance information.
+
+[UCLA | ADMISSIONS | FIRST-YEAR CHECKLIST]
+SOURCE: https://admission.ucla.edu/admitted-students/first-year-checklist
+USE FOR: Post-admission checklist and steps for admitted first-year students.
+
+[UCLA | CAMPUS LIFE | CLUBS AND ORGANIZATIONS]
+SOURCE: https://admission.ucla.edu/index%2Ephp/explore/clubs-organizations
+USE FOR: Student clubs, organizations, and campus involvement.
+
+[UCLA | CAMPUS LIFE | HOUSING AND DINING]
+SOURCE: https://admission.ucla.edu/index%2Ephp/explore/housing-dining
+USE FOR: Housing, residential life, and dining information.
+
+[UCLA | CAREER | INTERNSHIPS]
+SOURCE: https://admission.ucla.edu/explore/internships
+USE FOR: Internship opportunities and experiential learning.
+
+============================================================
+UC BERKELEY — University of California, Berkeley
+============================================================
+
+COLLEGE: UC Berkeley
+SYSTEM: University of California
+LOCATION: Berkeley, California
+WEBSITE: https://admissions.berkeley.edu/
+
+[UC BERKELEY | ADMISSIONS | FIRST-YEAR]
+SOURCE: https://admissions.berkeley.edu/apply-to-berkeley/first-year-applicants-uc-berkeley/
+USE FOR: First-year admissions and application information.
+
+[UC BERKELEY | ACADEMICS | MAJORS AND MINORS]
+SOURCE: https://admissions.berkeley.edu/academics/academic-programs-majors-uc-berkeley-minors/
+USE FOR: Academic programs, undergraduate majors, and minors.
+
+[UC BERKELEY | FINANCIAL AID | TYPES OF AID]
+SOURCE: https://admissions.berkeley.edu/cost/apply-for-financial-aid/types-of-aid/
+USE FOR: Financial aid programs and types of aid.
+
+[UC BERKELEY | RESEARCH]
+SOURCE: https://admissions.berkeley.edu/academics/research-opportunities/
+USE FOR: Undergraduate research opportunities and research-related programs.
+
+[UC BERKELEY | ADMISSIONS | APPLICANT CHECKLIST]
+SOURCE: https://admissions.berkeley.edu/apply-to-berkeley/first-year-applicants-uc-berkeley/applicant-checklist/
+USE FOR: Application and applicant checklist information.
+
+[UC BERKELEY | ADMISSIONS | PERSONAL INSIGHT QUESTIONS]
+SOURCE: https://admissions.berkeley.edu/apply-to-berkeley/application-resources/personal-insight-questions/
+USE FOR: UC Personal Insight Questions and application essay guidance.
+
+============================================================
+UCSB — University of California, Santa Barbara
+============================================================
+
+COLLEGE: UC Santa Barbara
+SYSTEM: University of California
+LOCATION: Santa Barbara, California
+WEBSITE: https://www.ucsb.edu/
+
+[UCSB | ACADEMICS | UNDERGRADUATE]
+SOURCE: https://www.ucsb.edu/academics/undergraduate
+USE FOR: Undergraduate academic information and programs.
+
+[UCSB | ADMISSIONS | UNDERGRADUATE ADMISSION]
+SOURCE: https://www.ucsb.edu/applying/undergraduate-admission
+USE FOR: Undergraduate admissions information.
+
+[UCSB | ACADEMICS | DEPARTMENTS AND PROGRAMS]
+SOURCE: https://www.ucsb.edu/academics/academic-departments-and-programs
+USE FOR: Academic departments, programs, and fields of study.
+
+[UCSB | RESEARCH]
+SOURCE: https://www.research.ucsb.edu/
+USE FOR: Research programs, opportunities, and university research information.
+
+[UCSB | STUDENT LIFE]
+SOURCE: https://studentlife.sa.ucsb.edu/
+USE FOR: Student life, activities, services, and campus experience.
+
+[UCSB | ADMISSIONS | FRESHMAN ELIGIBILITY AND SELECTION]
+SOURCE: https://admissions.sa.ucsb.edu/freshman-eligibility-selection
+USE FOR: Freshman eligibility and admissions selection criteria.
+
+============================================================
+UCSC — University of California, Santa Cruz
+============================================================
+
+COLLEGE: UC Santa Cruz
+SYSTEM: University of California
+LOCATION: Santa Cruz, California
+WEBSITE: https://admissions.ucsc.edu/
+
+[UCSC | ADMISSIONS | FIRST-YEAR]
+SOURCE: https://admissions.ucsc.edu/first-year-student#applying-as-a-firstyear-student
+USE FOR: First-year admissions and application information.
+
+[UCSC | ADMISSIONS | OUT-OF-STATE]
+SOURCE: https://admissions.ucsc.edu/first-year-student#outofstate-applicants
+USE FOR: Information relevant to out-of-state first-year applicants.
+
+[UCSC | FUTURE PLANNING | PREPARE FOR YOUR FUTURE]
+SOURCE: https://admissions.ucsc.edu/#prepare-for-your-future
+USE FOR: Career preparation, future planning, and student opportunities.
+
+[UCSC | ADMISSIONS | DATES AND DEADLINES]
+SOURCE: https://admissions.ucsc.edu/posts/dates-deadlines
+USE FOR: Application dates, deadlines, and important admission dates.
+
+[UCSC | COST | BUDGET AND COST TO ATTEND]
+SOURCE: https://financialaid.ucsc.edu/managing-aid/budget-cost-to-attend/
+USE FOR: Cost of attendance, student budgets, and financial planning.
+
+[UCSC | CAMPUS LIFE | BANANA SLUG LIFE]
+SOURCE: http://admissions.ucsc.edu/#banana-slug-life-
+USE FOR: Campus culture, student experience, and UC Santa Cruz identity.
+
+[UCSC | UNIVERSITY | RANKINGS AND ACCOMPLISHMENTS]
+SOURCE: https://admissions.ucsc.edu/why-ucsc/rankings-accomplishments
+USE FOR: University rankings, accomplishments, and institutional highlights.
+
+============================================================
+UCI — University of California, Irvine
+============================================================
+
+COLLEGE: UC Irvine
+SYSTEM: University of California
+LOCATION: Irvine, California
+WEBSITE: https://admissions.uci.edu/
+
+[UCI | ADMISSIONS | FIRST-YEAR]
+SOURCE: https://admissions.uci.edu/apply/first-year-students/index.php
+USE FOR: First-year admissions information and applicant guidance.
+
+[UCI | ADMISSIONS | HOW TO APPLY]
+SOURCE: https://admissions.uci.edu/apply/how-to-apply/index.php
+USE FOR: Application process and instructions.
+
+[UCI | ADMISSIONS | SUPPLEMENTAL APPLICATION]
+SOURCE: https://admissions.uci.edu/apply/how-to-apply/supplemental-application.php
+USE FOR: Supplemental application requirements and information.
+
+============================================================
+UC DAVIS — University of California, Davis
+============================================================
+
+COLLEGE: UC Davis
+SYSTEM: University of California
+LOCATION: Davis, California
+WEBSITE: https://www.ucdavis.edu/
+
+[UC DAVIS | ADMISSIONS | FIRST-YEAR]
+SOURCE: https://www.ucdavis.edu/admissions/undergraduate/first-year
+USE FOR: First-year undergraduate admissions.
+
+[UC DAVIS | ADMISSIONS | FIRST-YEAR REQUIREMENTS]
+SOURCE: https://www.ucdavis.edu/admissions/undergraduate/first-year/requirements
+USE FOR: First-year admission requirements and eligibility.
+
+[UC DAVIS | ACADEMICS | MAJORS]
+SOURCE: https://www.ucdavis.edu/academics/majors
+USE FOR: Undergraduate majors and academic programs.
+
+[UC DAVIS | ADMISSIONS | UNDERGRADUATE]
+SOURCE: https://www.ucdavis.edu/admissions/undergraduate
+USE FOR: General undergraduate admissions information.
+
+[UC DAVIS | COST | COST OF ATTENDANCE]
+SOURCE: https://www.ucdavis.edu/admissions/cost
+USE FOR: Tuition, fees, and cost-of-attendance information.
+
+[UC DAVIS | FINANCIAL AID | SCHOLARSHIPS]
+SOURCE: https://www.ucdavis.edu/cost/financial-aid-scholarships
+USE FOR: Financial aid and scholarship information.
+
+[UC DAVIS | CAMPUS LIFE]
+SOURCE: https://www.ucdavis.edu/campus-life
+USE FOR: Campus life, student experience, and activities.
+
+[UC DAVIS | CAMPUS LIFE | THINGS TO DO]
+SOURCE: https://www.ucdavis.edu/campus-life/things-to-do
+USE FOR: Student activities, events, and things to do on campus.
+
+[UC DAVIS | RESEARCH]
+SOURCE: https://www.ucdavis.edu/research
+USE FOR: University research and research programs.
+
+[UC DAVIS | RESEARCH | UNDERGRADUATE]
+SOURCE: https://www.ucdavis.edu/research/undergraduate
+USE FOR: Undergraduate research opportunities.
+
+============================================================
+UCSD — University of California, San Diego
+============================================================
+
+COLLEGE: UC San Diego
+SYSTEM: University of California
+LOCATION: San Diego, California
+WEBSITE: https://admissions.ucsd.edu/
+
+[UCSD | ADMISSIONS | FIRST-YEAR REQUIREMENTS]
+SOURCE: https://admissions.ucsd.edu/first-year/application-requirements.html
+USE FOR: First-year application requirements and admissions information.
+
+[UCSD | ACADEMICS | MAJORS]
+SOURCE: https://admissions.ucsd.edu/why/majors/index.html
+USE FOR: Majors and academic program information.
+
+[UCSD | COST | FINANCIAL AID]
+SOURCE: https://admissions.ucsd.edu/why/cost-aid/index.html
+USE FOR: Cost, financial aid, tuition, and affordability information.
+
+[UCSD | CAMPUS LIFE]
+SOURCE: https://admissions.ucsd.edu/why/campus-life/index.html
+USE FOR: Campus environment and campus life.
+
+[UCSD | STUDENT LIFE]
+SOURCE: https://admissions.ucsd.edu/why/student-life/index.html
+USE FOR: Student life, activities, and student experience.
+
+[UCSD | ADMISSIONS | SPANISH]
+SOURCE: https://admissions.ucsd.edu/espa%C3%B1ol/index.html
+USE FOR: Spanish-language admissions information.
+
+[UCSD | CAREER | INTERNSHIPS]
+SOURCE: https://admissions.ucsd.edu/why/career-internships/index.html
+USE FOR: Career development, internships, and professional opportunities.
+
+============================================================
+UC MERCED — University of California, Merced
+============================================================
+
+COLLEGE: UC Merced
+SYSTEM: University of California
+LOCATION: Merced, California
+WEBSITE: https://admissions.ucmerced.edu/
+
+[UC MERCED | ADMISSIONS | FIRST-YEAR REQUIREMENTS]
+SOURCE: https://admissions.ucmerced.edu/first-year/requirements
+USE FOR: First-year admission requirements.
+
+[UC MERCED | ACADEMICS | MAJORS AND MINORS]
+SOURCE: https://admissions.ucmerced.edu/academics/majors-minors
+USE FOR: Undergraduate majors and minors.
+
+[UC MERCED | CAMPUS | EXPLORE UC MERCED]
+SOURCE: https://uc-merced.foleon.com/admissions/explore-uc-merced/
+USE FOR: Campus, student experience, and university exploration.
+
+[UC MERCED | FINANCIAL AID]
+SOURCE: https://financialaid.ucmerced.edu/
+USE FOR: Financial aid information.
+
+[UC MERCED | FINANCIAL AID | FORMS AND REQUIREMENTS]
+SOURCE: https://financialaid.ucmerced.edu/Forms_Reqs
+USE FOR: Financial aid forms and requirements.
+
+[UC MERCED | ADMISSIONS | APPLY]
+SOURCE: https://admissions.ucmerced.edu/first-year/apply?menu
+USE FOR: First-year application process.
+
+[UC MERCED | STUDENT RESOURCES]
+SOURCE: https://admissions.ucmerced.edu/explore/student-resources
+USE FOR: Student resources and support services.
+
+[UC MERCED | RESEARCH | UNDERGRADUATE]
+SOURCE: https://admissions.ucmerced.edu/academics/undergraduate-research
+USE FOR: Undergraduate research opportunities.
+
+============================================================
+UC RIVERSIDE — University of California, Riverside
+============================================================
+
+COLLEGE: UC Riverside
+SYSTEM: University of California
+LOCATION: Riverside, California
+WEBSITE: https://admissions.ucr.edu/
+
+[UC RIVERSIDE | ADMISSIONS | FIRST-YEAR]
+SOURCE: https://admissions.ucr.edu/firstyear
+USE FOR: First-year admissions and application information.
+
+[UC RIVERSIDE | ACADEMICS | MAJORS]
+SOURCE: https://admissions.ucr.edu/majors
+USE FOR: Undergraduate majors and academic programs.
+
+[UC RIVERSIDE | COST | AFFORDABLE CALIFORNIA]
+SOURCE: https://admissions.ucr.edu/affordable-ca
+USE FOR: Affordability and California student cost information.
+
+[UC RIVERSIDE | VALUE]
+SOURCE: https://admissions.ucr.edu/value
+USE FOR: University value, affordability, outcomes, and related information.
+
+[UC RIVERSIDE | CAMPUS LIFE | COMMUNITY]
+SOURCE: https://admissions.ucr.edu/community
+USE FOR: Campus community and student experience.
+
+[UC RIVERSIDE | ACADEMICS | MAJORS A-Z]
+SOURCE: https://admissions.ucr.edu/majors/a-z
+USE FOR: Alphabetical major listing.
+
+[UC RIVERSIDE | ADMISSIONS | OUT-OF-STATE]
+SOURCE: https://admissions.ucr.edu/out-of-state
+USE FOR: Information for out-of-state applicants.
+
+============================================================
+RAG METADATA AND QUERY ROUTING
+============================================================
+
+SUPPORTED_COLLEGES:
+- UCLA
+- UC Berkeley
+- UCSB
+- UCSC
+- UCI
+- UC Davis
+- UCSD
+- UC Merced
+- UC Riverside
+
+COMMON_QUERY_CATEGORIES:
+- admissions
+- first-year admissions
+- application
+- requirements
+- deadlines
+- majors
+- academics
+- minors
+- tuition
+- fees
+- cost
+- financial aid
+- scholarships
+- research
+- undergraduate research
+- internships
+- careers
+- housing
+- dining
+- campus life
+- student life
+- clubs
+- organizations
+- student resources
+- out-of-state applicants
+- admitted student checklist
+
+RECOMMENDED_RAG_BEHAVIOR:
+1. Identify the college mentioned by the user.
+2. Identify the information category requested.
+3. Retrieve chunks whose COLLEGE and category match the query.
+4. Prefer official university sources over secondary sources.
+5. For time-sensitive information such as deadlines, tuition, requirements,
+   and financial aid, retrieve current web content from the source URL when possible.
+6. Return the source URL with the answer so the UI can expose a citation/link.
+7. If multiple colleges are requested, retrieve comparable categories for each college.
+8. Do not invent a value when the source does not provide it.
+9. Distinguish between "source page available" and "fact extracted from source."
+10. When the user asks to compare colleges, normalize the retrieved data into
+    consistent fields so it can be displayed as a table.
+
+SUGGESTED_TABLE_FIELDS:
+- College
+- Location
+- Application / Admission
+- Deadline
+- Major / Program
+- Tuition / Cost
+- Financial Aid
+- Research
+- Internships / Careers
+- Housing
+- Dining
+- Campus Life
+- Student Life
+- Source
+
+NOTE:
+This is a SOURCE-INDEX knowledge base, not a static database of admissions facts.
+The URLs should be crawled/retrieved and re-indexed periodically so the chatbot
+does not rely on stale admissions deadlines, tuition, requirements, or policies.
