@@ -372,7 +372,6 @@ COMMON_QUERY_CATEGORIES:
 - organizations
 - student resources
 - out-of-state applicants
-- admitted student checklist
 
 RECOMMENDED_RAG_BEHAVIOR:
 1. Identify the college mentioned by the user.

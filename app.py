@@ -3,6 +3,9 @@ from bs4 import BeautifulSoup
 import requests
 import pandas as pd
 import json
+from flask import Flask, render_template, request, jsonify
+
+app = Flask(__name__)
 
 def route_request(prompt, out_of_state_url=None):
     prompt_lower = prompt.lower()
@@ -57,3 +60,15 @@ def extract_data(text_content):
         data_dict = match.groupdict()
         return data_dict
     
+@app.route("/")
+def home():
+    return render_template("index.html")
+
+@app.route("/chat", methods=["POST"])
+def chat():
+    user_message = request.json.get("message")
+    
+    return jsonify({"Status":"received", "text_was": user_message})
+
+if __name__ == "__main__":
+    app.run()
