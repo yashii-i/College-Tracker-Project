@@ -1,7 +1,6 @@
 import re
 from bs4 import BeautifulSoup
 import requests
-import pandas as pd
 import json
 from flask import Flask, render_template, request, jsonify
 
@@ -67,8 +66,9 @@ def home():
 @app.route("/chat", methods=["POST"])
 def chat():
     user_message = request.json.get("message")
-    
-    return jsonify({"Status":"received", "text_was": user_message})
+    raw_web_text = route_request(user_message)
+    parsed_dict = extract_data(raw_web_text)
+    return jsonify({"status":"success", "data": parsed_dict})
 
 if __name__ == "__main__":
     app.run()
