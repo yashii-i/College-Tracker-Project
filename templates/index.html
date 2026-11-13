@@ -1,10 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <div>
-        
-    </div>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>College Tracking Project</title>
+    </head>
+    <body>
+        <div id="chat-box"
+            style = "border: 1px solid #ccc; height: 300px; overflow-y: scroll; padding: 10px; margin-bottom: 10px;"
+
+        ></div> 
+        <label for="name">What are you curious about?:</label>
+        <input type="text" id="name" name="name" required minlength="1" size="30" />
+        <input type = "button" id="send-btn" value = "Send" />
+        <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+    </body>
+</html>
+
 

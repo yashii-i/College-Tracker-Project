@@ -372,6 +372,7 @@ COMMON_QUERY_CATEGORIES:
 - organizations
 - student resources
 - out-of-state applicants
+- admitted student checklist
 
 RECOMMENDED_RAG_BEHAVIOR:
 1. Identify the college mentioned by the user.
@@ -402,3 +403,8 @@ SUGGESTED_TABLE_FIELDS:
 - Campus Life
 - Student Life
 - Source
+
+NOTE:
+This is a SOURCE-INDEX knowledge base, not a static database of admissions facts.
+The URLs should be crawled/retrieved and re-indexed periodically so the chatbot
+does not rely on stale admissions deadlines, tuition, requirements, or policies.

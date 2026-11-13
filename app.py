@@ -21,10 +21,10 @@ def route_request(prompt, out_of_state_url=None):
             headers = {"User Agent": "Mozilla/5.0"}
             response = requests.get(uc_url, headers=headers, timeout=10)
             soup = BeautifulSoup(response.text, "html.parser")
-            for element in soup:
-                element.decompose(["script", "style", "nav","header","footer"])
-                clean_text = soup.get_text(separator="") 
-                return re.sub(r'\s+', '',clean_text()).strip()
+            for element in soup(["script", "style", "nav","header","footer"]):
+                element.extract()
+            clean_text = soup.get_text(separator=" ") 
+            return re.sub(r'\s+', '',clean_text).strip()
         return knowledge_base
     
     else:
@@ -32,11 +32,10 @@ def route_request(prompt, out_of_state_url=None):
             headers = {"User Agent": "Mozilla/5.0"}
             response = requests.get(out_of_state_url, headers=headers, timeout=10)
             soup = BeautifulSoup(response.text, "html.parser")
-            for element in soup:
-                element.decompose(["script", "style", "nav","header","footer"])
-                flat_text = soup.get_text(separator="") 
-                return re.sub(r'\s+', '',flat_text()).strip()
-            return flat_text
+            for element in soup["script", "style", "nav","header","footer"]:
+                element.extract()
+            flat_text = soup.get_text(separator="") 
+            return re.sub(r'\s+', '',flat_text).strip()
         return ""
     
 def extract_data(text_content):
@@ -46,13 +45,13 @@ def extract_data(text_content):
         r"Class Size:\s*(?P<class_size>[0-9,]+).*?"
         r"Rank:\s*(?P<rank>[0-9,]+).*?"
         r"# of Majors:\s(?P<majors>[0-9,]+).*?"
-        r"Graduation Rate:\s(?P<grad_rate>[0-9,]\%+).*?"
+        r"Graduation Rate:\s*(?P<grad_rate>[0-9,]+)\%.*?"
         r"Average Tuition:\s*(?P<avg_tuition>\$[0-9,]+).*?"
         r"In state:\s*(?P<in_state>\$[0-9,]+).*?"
         r"Out of State:\s*(?P<out_state>\$[0-9,]+).*?"
         r"Housing:\s*(?P<housing>\$[0-9,]+).*?"
         r"Application Fee:\s*(?P<app_fee>\$[0-9,]+).*?"
-        r"Financial Aid Rate:\s*(?P<financial_aid>[0-9,]\%+).*?"
+        r"Financial Aid Rate:\s*(?P<financial_aid>[0-9,]+)\%"
     
     )
     for match in re.finditer(pattern, text_content):
@@ -71,4 +70,4 @@ def chat():
     return jsonify({"status":"success", "data": parsed_dict})
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug = True)
