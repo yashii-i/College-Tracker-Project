@@ -1,6 +1,6 @@
 # College-Tracker-Project
 ----
-This project is meant for students to research crucial information during the college application process and to simply planning and comparisons in one singular place.
+This project is meant for students to research crucial information during the college application process and to simplify planning and decision-making in one singular place.
 
 ----
 
